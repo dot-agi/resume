@@ -1,0 +1,326 @@
+% LaTeX Resume 
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin=0.4in, top=0.4in, bottom=0.4in]{geometry}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% Uncomment one of the following if you want to change the default font
+%
+% Sans-serif
+% \usepackage[sfdefault]{roboto} % Roboto
+% \usepackage[sfdefault]{noto-sans} % Noto Sans
+% Serif
+% \usepackage{charter} % Charter
+% Times New Roman lookalike
+\usepackage{newtxtext,newtxmath}
+
+\pagestyle{plain}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Customize link colors
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section Formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting is now consistent with the overall style
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\normalsize
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% This command is now designed to be used within an itemize environment directly
+\newcommand{\resumeLink}[2]{\item \href{#1}{#2}}
+
+
+% Adjust the foot skip to ensure footer content is well-placed
+\setlength{\footskip}{20pt} % Increased foot skip for better spacing
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{center}
+    \textbf{\Huge \scshape Pratyush Shukla} \\ \vspace{2pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/the-praxs}{the-praxs} $|$
+    \faIcon{github}
+    \href{https://github.com/hawk-praxs}{hawk-praxs} $|$
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/praxs}{linkedin.com/in/praxs} $|$
+    \faIcon{envelope}
+    \href{mailto:pratyush.shukla@outlook.in}{pratyush.shukla@outlook.in} $|$
+    \faIcon{phone}
+    \href{tel:+918853934890}{+91-8853934890}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+        \resumeProjectHeading
+        {\textbf{New York University} $|$ \footnotesize\emph{M.S. Computer Engineering, GPA - 3.333/4}}{May 2023}
+
+        \resumeProjectHeading
+        {\textbf{Lovely Professional University} $|$ \footnotesize\emph{B.Tech (Hons.) Computer Science and Engineering, CGPA - 8.020/10}}{July 2021}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++17, SQL, NoSQL, JavaScript, TypeScript, Go, MATLAB, \LaTeX}
+     
+     \textbf{Tools}{: Git, Docker, PostgreSQL, MongoDB, Node.js, Amazon Web Services (AWS), Microsoft Azure, Isaac Sim, Terraform, Excel}
+     
+     \textbf{Frameworks}{: Flask, PySpark, FastAPI, PyTorch, LangChain, Autogen, crewAI, Jinja2, STL}
+     
+     \textbf{Libraries}{: NumPy, SciPy, pandas, sklearn, Beautiful Soup, Pydantic, SQLAlchemy, OpenCV, Transformers, Diffusers, Boost}
+     
+    }}
+ \end{itemize}
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{Orangewood Labs} $|$ \footnotesize\emph{AI \& Computer Vision Engineer}}{April 2024 -- Current}
+    \resumeItemListStart
+      \resumeItem{Leading the \href{https://robogpt.orangewood.co}{RoboGPT} v4 project as an agentic platform for several robot types with real-world and simulation support.}
+      \resumeItem{Leading the decentralized AI project on connecting HPC clusters remotely and securely managing them via blockchain technology to provide on-demand, low-cost services to consumers.}
+      \resumeItem{Led the migration of the projects from Bitbucket to GitHub as an organization owner by setting up CI/CD pipelines, policies,  and teams, accelerating project management by 2x.}
+      \resumeItem{Led R\&D on training a model for the Orangewood 6.5 robotic arm with the HuggingFace LeRobot library on several tasks.}
+      \resumeItem{Represented the organization as the lead AI \& Computer Vision Engineer in the OpenAI Dev Day held in New Delhi, India.}
+      \resumeItem{Managing the backend infrastructure of the organization to handle resources better.}
+      \resumeItem{Crafted terraform recipes for AWS to deploy a fully-managed spot-requested EC2 instance for running Nvidia's Isaac Sim and Isaac Lab simulation software on the cloud, increasing accessibility by 100\%.}
+      \resumeItem{Configured the AWS platform with policies, roles, and dashboards to seamlessly manage the organization's resources.}
+      \resumeItem{Integrated Mistral7B in RoboGPT to enhance response latency, resulting in a \$3000 monthly savings on Azure OpenAI services.}
+      \resumeItem{Constrained the LLM models in RoboGPT by adding guardrails to safeguard model responses against their intended behavior.}
+      \resumeItem{Experimented with several prompt engineering techniques for Phi3-mini LLM, reducing hallucinations with tool usage by 40\%.}
+      \resumeItem{Contributed to skill training features via code templates and system prompting, enabling real-time learning for new robot skills.}
+      \resumeItem{Researched and tested several Small Language Models for offline AI capabilities, cutting infrastructure operation costs by 20\%.}
+      \resumeItem{Reviewed and tested research papers on synthetic data generation, diversifying data collection capabilities by 60\%.}
+      % \resumeItem{Deployed RoboGPT on an edge device (Jetson Nano) to minimize cloud deployment cost by 80\%}
+      % \resumeItem{Managed the company's cloud infrastructure improving resource handling by 70\%.}
+      % \resumeItem{Designed and maintained the AI module of the company's flagship software for robots (\href{https://robogpt.orangewood.co}{RoboGPT}).}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{OpenBB Finance} $|$ \footnotesize\emph{Junior Software Engineer - Platform}}{July 2023 -- March 2024}
+    \resumeItemListStart
+      \resumeItem{Designed ETL/data pipelines for the company's flagship enterprise software (\href{https://openbb.co/products/pro}{OpenBB Terminal Pro}).}
+      \resumeItem{Maintained data standardization from over five data providers, ensuring high data quality and consistency.}
+      \resumeItem{Engineered two automation scripts for the open-source software (\href{https://github.com/OpenBB-finance/OpenBB}{OpenBB Platform}) installation, improving setup time by 70\%.}
+      \resumeItem{Overhauled public documentation based on user and internal feedback, improving accessibility and readability by 30\%.}
+      \resumeItem{Launched ten Python packages of different data providers for the Platform, expanding data coverage on the Platform by 40\%.}
+      \resumeItem{Developed custom deprecation messages in extensions, significantly enhancing user interface and experience.}
+      \resumeItem{Devised a JSON structure to gather information about functions in Python packages, achieving 100\% automation in data syncing.}
+      \resumeItem{Productionized website documentation generation using the JSON structure, streamlining deployment time by 70\%.}
+      \resumeItem{Maintained GitHub CI workflows to ensure development changes, code quality, and consistency.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Miko} $|$ \footnotesize\emph{Data Engineering Intern}}{May 2023 -- August 2023}
+    \resumeItemListStart
+      \resumeItem{Deployed a data pipeline for Mixpanel API, enabling 24x7 data collection on AWS, streamlining analysis processes.}
+      \resumeItem{Audited databases to identify and rectify inconsistencies, ensuring high data integrity.}
+      \resumeItem{Developed a proof of concept for a payment data pipeline using Chargebee API, facilitating efficient data collection.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Rosenblatt Securities} $|$ \footnotesize\emph{Software Developer Intern}}{March 2022 -- April 2022}
+    \resumeItemListStart
+      \resumeItem{Deployed a data pipeline for time series data using DeFiLlama and CoinGecko APIs, increasing extraction efficiency by 30\%.}
+      \resumeItem{Analyzed time series data for consistency, accuracy, and non-redundancy, enhancing analytics performance by 60\%.}
+      \resumeItem{Developed a process to generate Excel workbooks with time series data for the top five cryptocurrencies for further evaluation.}
+    \resumeItemListEnd
+
+    % \resumeProjectHeading
+    % {\textbf{Agile Social Learning 360} $|$ \footnotesize\emph{Software Developer Intern}}{January 2021 -- June 2021}
+    % \resumeItemListStart
+    %   \resumeItem{Optimized AWS CloudFormation and VPC configurations for deploying user-specific virtual instances, reducing deployment times by 25\% and costs by 20\%.}
+    %   \resumeItem{Enhanced security and connectivity within AWS environments using AWS VPC, Lambda, and IAM, maintaining a zero-incident security record.}
+    %   \resumeItem{Managed data warehouse integration, streamlining data loading from AWS S3 to AWS Redshift, boosting data retrieval speeds by 42\% and saving \$100 per month in data streaming costs.}
+    %   \resumeItem{Created AWS configuration diagrams on a client-needs basis, ensuring easier deployment and management.}
+    % \resumeItemListEnd
+
+    % \resumeProjectHeading
+    % {\textbf{Lovely Professional University} $|$ \footnotesize\emph{Research Assistant}}{February 2019 -- December 2020}
+    % \resumeItemListStart
+    %   \resumeItem{Extracted and transformed a comprehensive dataset from several research papers, improving model predictions by 10\%.}
+    %   \resumeItem{Tuned 15+ machine learning models using sklearn and XGBoost, benchmarking performance against the augmented dataset.}
+    %   \resumeItem{Performed literature review of Adaptive Neuro-Fuzzy Inference System variants for application in Agile story points prediction.}
+    %   \resumeItem{Produced an optimization algorithm called Energy Efficient Bat (EEBAT) algorithm based on a swarm of bats utilizing their energy for exploration and exploitation effectively using their mean fitness as the energy source.}
+    %   \resumeItem{Optimized the Adaptive Neuro-Fuzzy Inference System hyperparameters via the EEBAT algorithm, achieving 97\% accuracy.}
+    %   \resumeItem{Contributed to the doctoral thesis by performing code analysis and literature review of several variants of Bat optimization algorithm, culminating into a research paper publication in \href{https://www.nature.com/articles/s41598-022-11565-2}{Nature}.}
+    % \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{\href{https://www.agentops.ai/}{AgentOps}} $|$ \footnotesize\emph{Open Source observability platform for AI agents}}{}
+        \resumeItemListStart
+            \resumeItem{Active maintainer of the AgentOps-AI repositories, focusing mainly on the AgentOps and tokencost products.}
+            \resumeItem{Engineering the data pipelines using OpenTelemetry Python SDK to allow custom dashboards via the \href{https://github.com/agentops-ai/jaiqu/}{Jaiqu} tool.}
+            \resumeItem{Integrated support for OpenAI Assistants, Mistral, and LlamaStack Python SDK.}
+            \resumeItem{Developed advanced support for \href{https://github.com/microsoft/TaskWeaver}{Microsoft TaskWeaver}, a code-first agent framework.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://defillama-curl.readthedocs.io/}{DeFiLlama-Curl}} $|$ \footnotesize\emph{Top downloaded python library to fetch DeFiLlama data via PycURL}}{}
+        \resumeItemListStart
+            \resumeItem{Incorporated PycURL to fetch data from DeFiLlama REST APIs, enhancing data retrieval performance by 80\%.}
+            \resumeItem{Optimized data retrieval speed by implementing multithreading, reducing fetch time by 50\%.}
+        \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/katsamapol/Adversarial-Attack-to-Image-Caption}{Adversarial Attack on Image Captioning Models}} $|$ \footnotesize\emph{Evaluated the security of image captioning models through adversarial attacks}}{}
+        \resumeItemListStart
+            \resumeItem{Developed an image captioning model using an Encoder-Decoder-based Attention mechanism with Beam Search.}
+            \resumeItem{Implemented adversarial attack models using ResNet-50, ResNet-101, and ResNet-152 as encoders.}
+            \resumeItem{Trained models on MSCOCO 2014 and Flickr8k datasets.}
+            \resumeItem{Achieved a 69\% success rate in white-box attacks on the models.}
+            \resumeItem{Reduced BLEU-4 score from 32 to 25 through black-box attacks on the CLIPCap captioning model.}
+        \resumeItemListEnd
+          
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/the-praxs/dl-benchmark}{Benchmarking Deep Learning Ecosystems on HPC}} $|$ \footnotesize\emph{Performance analysis of Flux and PyTorch frameworks on HPCs}}{}
+        \resumeItemListStart
+            \resumeItem{Developed and trained LeNet and ResNet-50 models on MNIST and FashionMNIST datasets.}
+            \resumeItem{Benchmark accuracy and performance metrics against batch size and number of workers.}
+            \resumeItem{Engineered 10 test suites for CUDA and non-CUDA HPCs.}
+            \resumeItem{Concluded that Flux offers superior performance but PyTorch has stronger community support.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://medium.com/@praxs/defillama-curl-python-api-a413b59157b0}{Blockchain Protocol Analysis and Prediction}} $|$ \footnotesize\emph{Analyzing and predicting trends of popular blockchain protocols}}{}
+        \resumeItemListStart
+            \resumeItem{Deployed a Python script for continuous data retrieval from DeFiLlama, storing data in a database.}
+            \resumeItem{Performed exploratory data analysis (EDA) on market trends, trading volumes, and values of top chains.}
+            \resumeItem{Utilized Prophet Library to predict market trends for the next 3 months with 95\% accuracy.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/the-praxs/Insurance-Modeling}{Insurance Charges Prediction}} $|$ \footnotesize\emph{Predicting insurance charges based on analyzed data}}{}
+        \resumeItemListStart
+            \resumeItem{Conducted EDA to analyze factors affecting insurance charges, obtaining key insights.}
+            \resumeItem{Enhanced model accuracy by 15\% via feature engineering, including clustering similar families and creating two new features.}
+            \resumeItem{Compared performance of Linear, Polynomial, Ridge, Gradient Boost, XGBoost, and CatBoost regression models.}
+            \resumeItem{Optimized Gradient Boost hyperparameters to achieve maximum accuracy of 85.44\%.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/the-praxs/Stock-Price-Movement}{Stock Price Movement}} $|$ \footnotesize\emph{Evaluated the impact of quarterly earnings reports on stock price movement}}{}
+        \resumeItemListStart
+            \resumeItem{Engineered a CLI application to download, calculate, and plot data using GNUPlot.}
+            \resumeItem{Implemented liburl to fetch adjusted close prices for Russell 3000 stocks and IWV via EODHD.}
+            \resumeItem{Analyzed stocks based on earnings and Zacks consensus estimates, sorting them into three groups.}
+            \resumeItem{Developed a Bootstrap class to calculate AAR, AAR-STD, CAAR, and CAAR-STD for each stock group.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/hawk-praxs/dog-breed-classifier}{Dog Breed Classifier}} $|$ \footnotesize\emph{Deep learning model for classifying dog breeds from images}}{}
+        \resumeItemListStart
+            \resumeItem{Augmented Stanford Dogs dataset from 120 to 134 breeds, improving data quality and size.}
+            \resumeItem{Developed a face detector using ResNet-50, achieving 100\% accuracy in detecting dog faces.}
+            \resumeItem{Trained a transfer learning-based classifier to 87\% accuracy, outperforming the ResNet-50+FT+DA model.}
+            \resumeItem{Deployed the model using AWS SageMaker and AWS Lambda, facilitating end-user access through APIs.}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- Publications--------------------
+\section{Publications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeLink{https://link.springer.com/chapter/10.1007/978-3-031-28073-3_50}{Attacking Compressed Vision Transformers, 2023}
+    \resumeLink{https://dl.acm.org/doi/abs/10.1155/2021/6455592}{Taxonomy of Adaptive Neuro-Fuzzy Inference Systems in Modern Engineering Sciences, Hindawi, 2021}
+    \resumeLink{https://www.degruyter.com/document/doi/10.1515/9783110676112-009/html}{Nature-inspired optimization techniques, Nature-inspired Optimization Algorithms, De-Gruyter, 2021}
+\end{itemize}
+
+% -------------------- Certifications--------------------
+\section{Certifications}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \resumeLink{https://www.udacity.com/course/aws-machine-learning-engineer-nanodegree--nd189}{Machine Learning Engineer Nanodegree, Udacity}
+        \resumeLink{https://www.coursera.org/account/accomplishments/specialization/BXK6MS6YPXB9}{Mathematics for Machine Learning Specialization, Coursera}
+        \resumeLink{https://wqu.thedataincubator.com/certificate/5638022657736704}{Applied Data Science Module Unit 2 (Honors) - Machine Learning and Statistical Analysis}
+        \resumeLink{https://wqu.thedataincubator.com/certificate/5638022657736704_full}{Applied Data Science Module Unit 1 (Honors)}
+    \end{itemize}
+
+
+ \end{document}
